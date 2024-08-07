@@ -10,19 +10,131 @@ body {
     align-items: stretch;
 }
 
+* {
+    font-size: 1.1rem;
+}
+
 main {
     flex: 1;
+}
+
+h1 {
+    font-size: 2rem;
+
+    margin-left: 20px;
 }
 
 .grid {
     margin: 10px;
 
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 21rem), 1fr));
+
+    grid-template-rows: 1fr;
 
     gap: 7.5px;
 }
 
-.book {
-    border: 1px solid black;
+fieldset, .book {
+    margin: 0px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.1rem;
+
+    border: 1px solid #454545;
+    padding: 20px;
+    position: relative;
+    margin-top: 15px;
+}
+
+fieldset {
+    border: 2px solid rgb(0, 0, 0);
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.inputDiv {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input {
+    height: 1rem;
+    border: 1px solid rgb(55, 55, 55);
+}
+
+#hasBeenReadDiv {
+    justify-content: start;
+}
+
+#sideByside {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+legend, .book h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+
+    position: absolute;
+    top: -0.7em;
+    left: 1em;
+    padding: 0 0.5em;
+    background: white;
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.buttonsBook {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.authorBook {
+    font-size: 1.3rem;
+}
+
+.numberOfPagesBook {
+    font-size: 1.2rem;
+}
+
+.hasBeenReadBookDiv {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.hasBeenReadBook {
+    font-size: 1.3rem;
+}
+
+input[type="checkbox"] {
+    width: 1.3rem;
+    height: 1.3rem;
+    padding: 0px;
+    margin: 0px;
+}
+
+.deleteDiv {
+display: flex;
+justify-content: flex-end;
+}
+
+.deleteBook {
+width: min-content;
+}
+
+.bookInputs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
 }
