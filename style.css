@@ -1,0 +1,28 @@
+body {
+    margin: 0px;
+    padding: 0px;
+
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+main {
+    flex: 1;
+}
+
+.grid {
+    margin: 10px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+
+    gap: 7.5px;
+}
+
+.book {
+    border: 1px solid black;
+}
