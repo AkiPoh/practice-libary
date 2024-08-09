@@ -1,3 +1,42 @@
+:root {
+    --marginContainers: 20px;
+
+    --gapMainGrid: 0.5rem;
+    --gapElementContents: 0.75rem;
+
+    --borderDefault: 1px solid rgb(53, 53, 53);
+    --borderBold: 2px solid rgb(0, 0, 0);
+
+    --defaultFontSize: 1.1rem;
+    --h1FontSize: 2rem;
+    --titleFontSize: 1.5rem;
+    --bookNormalFontSize: 1.3rem;
+    --bookLargeFontSize: 1.4rem;
+}
+
+* {
+    font-size: var(--defaultFontSize);
+    font-family: sans-serif;
+}
+
+input {
+    height: 1rem;
+    border: var(--borderDefault);
+    width: 100%;
+}
+
+input[type="checkbox"] {
+    width: 1.3rem;
+    height: 1.3rem;
+    padding: 0px;
+    margin: 0px;
+}
+
+strong {
+    font-size: inherit;
+}
+
+
 body {
     margin: 0px;
     padding: 0px;
@@ -10,29 +49,28 @@ body {
     align-items: stretch;
 }
 
-* {
-    font-size: 1.1rem;
-}
-
 main {
     flex: 1;
 }
 
 h1 {
-    font-size: 2rem;
+    margin: var(--marginContainers);
 
-    margin-left: 20px;
+    font-size: var(--h1FontSize);
 }
 
+
 .grid {
-    margin: 10px;
+    margin: var(--gapElementContents);
+    margin-top: 30px;
 
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
 
     grid-template-rows: 1fr;
 
-    gap: 7.5px;
+    gap: var(--gapMainGrid);
+    row-gap: var(--titleFontSize);
 }
 
 fieldset, .book {
@@ -41,47 +79,15 @@ fieldset, .book {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 0.1rem;
+    gap: var(--gapElementContents);
 
-    border: 1px solid #454545;
-    padding: 20px;
+    border: var(--borderDefault);
+    padding: var(--marginContainers);
     position: relative;
-    margin-top: 15px;
-}
-
-fieldset {
-    border: 2px solid rgb(0, 0, 0);
-
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
-
-.inputDiv {
-    display: flex;
-    gap: 1rem;
-    justify-content: space-between;
-    align-items: center;
-}
-
-input {
-    height: 1rem;
-    border: 1px solid rgb(55, 55, 55);
-    width: 100%;
-}
-
-#hasBeenReadDiv {
-    justify-content: start;
-}
-
-#sideByside {
-    display: flex;
-    gap: 1rem;
-    justify-content: space-between;
 }
 
 legend, .book h2 {
-    font-size: 1.5rem;
+    font-size: var(--titleFontSize);
     font-weight: bold;
 
     position: absolute;
@@ -89,57 +95,57 @@ legend, .book h2 {
     left: 1em;
     padding: 0 0.5em;
     background: white;
-    font-size: 1.2em;
     margin: 0;
 }
 
-.buttonsBook {
+fieldset {
+    border: var(--borderBold);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.divsAdd {
+    display: flex;
+    gap: var(--gapElementContents);
+    justify-content: space-between;
+    align-items: center;
+}
+
+#sideBySideDivAdd {
+    display: flex;
+    gap: var(--gapElementContents);
+    justify-content: space-between;
+}
+
+.inputsDivBook {
     display: flex;
     justify-content: space-between;
     gap: 1rem;
 }
 
 .authorBook {
-    font-size: 1.3rem;
+    font-size: var(--bookLargeFontSize);
 }
 
 .numberOfPagesBook {
-    font-size: 1.2rem;
+    font-size: var(--bookNormalFontSize);
 }
 
-.hasBeenReadBookDiv {
+.hasBeenReadDivBook {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: var(--gapElementContents);
 }
 
-.hasBeenReadBook {
-    font-size: 1.3rem;
+.hasBeenReadLabelBook {
+    font-size: var(--bookNormalFontSize);
 }
 
-input[type="checkbox"] {
-    width: 1.3rem;
-    height: 1.3rem;
-    padding: 0px;
-    margin: 0px;
-}
-
-.deleteDiv {
-display: flex;
-justify-content: flex-end;
-}
-
-.deleteBook {
+.deleteButtonBook {
 width: min-content;
 }
 
-.bookInputs {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1rem;
-}
-
 footer {
-    padding: 10px;
+    padding: var(--marginContainers);
 }

@@ -5,35 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <script src="./script.js" defer></script>
-    <title>Libary</title>
+    <title>Library</title>
 </head>
 <body>
     <main>
-        <h1>Libary</h1>
+        <h1>Library</h1>
         <div class="grid">
-            <div class="addBook">
-                <form action="">
+            <div class="bookAdd">
+                <form>
                     <fieldset>
-                        <legend>Add a book</legend>
-                        <div class="inputDiv">
-                            <label for="title">TITLE </label>
-                            <input type="text" name="title" id="title" required>
+                        <legend>ADD A BOOK</legend>
+                        <div class="divsAdd">
+                            <label for="titleAdd">TITLE </label>
+                            <input type="text" name="title" id="titleAdd" required>
                         </div>
-                        <div class="inputDiv">
-                            <label for="author">AUTHOR </label>
-                            <input type="text" name="author" id="author" required>
+                        <div class="divsAdd">
+                            <label for="authorAdd">AUTHOR </label>
+                            <input type="text" name="author" id="authorAdd" required>
                         </div>
-                        <div class="inputDiv">
-                            <label for="numberOfPages">NUMBER OF PAGES </label>
-                            <input type="number" name="numberOfPages" id="numberOfPages" required>
+                        <div class="divsAdd">
+                            <label for="numberOfPagesAdd">NUMBER OF PAGES </label>
+                            <input type="number" name="numberOfPages" id="numberOfPagesAdd" required>
                         </div>
-                        <div id="sideByside">
-                            <div class="inputDiv" id="hasBeenReadDiv">
-                                <label for="hasBeenRead">HAS BEEN READ</label>
-                                <input type="checkbox" name="hasBeenRead" id="hasBeenRead" required>
+                        <div id="sideBySideDivAdd">
+                            <div class="divsAdd" id="hasBeenReadDivAdd">
+                                <label for="hasBeenReadAdd">HAS BEEN READ</label>
+                                <input type="checkbox" name="hasBeenRead" id="hasBeenReadAdd" required>
                             </div>
-                            <div class="submitDiv">
-                                <button type="submit">ADD</button>
+                            <div class="submitDivAdd">
+                                <button type="submit" id="submitAdd">ADD</button>
                             </div>
                         </div>
                     </fieldset>
@@ -42,126 +42,14 @@
             <div class="book">
                 <h2 class="titleBook">The Hobbit</h2>
                 <div class="authorBook">J.R.R. Tolkien</div>
-                <div class="numberOfPagesBook">295</div>
-                <div class="bookInputs">
-                    <div class="hasBeenReadBookDiv">
-                        <input type="checkbox" id="2323">
-                        <Label for="2323" class="hasBeenReadBook">Has been read</Label>
+                <div class="numberOfPagesBook">Pages: <strong>295</strong></div>
+                <div class="inputsDivBook">
+                    <div class="hasBeenReadDivBook">
+                        <input type="checkbox" id="2323" class="hasBeenReadInputBook">
+                        <Label for="2323" class="hasBeenReadLabelBook">Has been read</Label>
                     </div>
-                    <div class="deleteDiv">
-                        <button class="deleteBook">DELETE</button>
-                    </div>
-                </div>
-            </div>
-            <div class="book">
-                <h2 class="titleBook">The Hobbit</h2>
-                <div class="authorBook">J.R.R. Tolkien</div>
-                <div class="numberOfPagesBook">295</div>
-                <div class="bookInputs">
-                    <div class="hasBeenReadBookDiv">
-                        <input type="checkbox" id="2323">
-                        <Label for="2323" class="hasBeenReadBook">Has been read</Label>
-                    </div>
-                    <div class="deleteDiv">
-                        <button class="deleteBook">DELETE</button>
-                    </div>
-                </div>
-            </div>
-            <div class="book">
-                <h2 class="titleBook">The Hobbit</h2>
-                <div class="authorBook">J.R.R. Tolkien</div>
-                <div class="numberOfPagesBook">295</div>
-                <div class="bookInputs">
-                    <div class="hasBeenReadBookDiv">
-                        <input type="checkbox" id="2323">
-                        <Label for="2323" class="hasBeenReadBook">Has been read</Label>
-                    </div>
-                    <div class="deleteDiv">
-                        <button class="deleteBook">DELETE</button>
-                    </div>
-                </div>
-            </div>
-            <div class="book">
-                <h2 class="titleBook">The Hobbit</h2>
-                <div class="authorBook">J.R.R. Tolkien</div>
-                <div class="numberOfPagesBook">295</div>
-                <div class="bookInputs">
-                    <div class="hasBeenReadBookDiv">
-                        <input type="checkbox" id="2323">
-                        <Label for="2323" class="hasBeenReadBook">Has been read</Label>
-                    </div>
-                    <div class="deleteDiv">
-                        <button class="deleteBook">DELETE</button>
-                    </div>
-                </div>
-            </div>
-            <div class="book">
-                <h2 class="titleBook">The Hobbit</h2>
-                <div class="authorBook">J.R.R. Tolkien</div>
-                <div class="numberOfPagesBook">295</div>
-                <div class="bookInputs">
-                    <div class="hasBeenReadBookDiv">
-                        <input type="checkbox" id="2323">
-                        <Label for="2323" class="hasBeenReadBook">Has been read</Label>
-                    </div>
-                    <div class="deleteDiv">
-                        <button class="deleteBook">DELETE</button>
-                    </div>
-                </div>
-            </div>
-            <div class="book">
-                <h2 class="titleBook">The Hobbit</h2>
-                <div class="authorBook">J.R.R. Tolkien</div>
-                <div class="numberOfPagesBook">295</div>
-                <div class="bookInputs">
-                    <div class="hasBeenReadBookDiv">
-                        <input type="checkbox" id="2323">
-                        <Label for="2323" class="hasBeenReadBook">Has been read</Label>
-                    </div>
-                    <div class="deleteDiv">
-                        <button class="deleteBook">DELETE</button>
-                    </div>
-                </div>
-            </div>
-            <div class="book">
-                <h2 class="titleBook">The4 Hobbit</h2>
-                <div class="authorBook">J.R.R. Tolkien</div>
-                <div class="numberOfPagesBook">295</div>
-                <div class="bookInputs">
-                    <div class="hasBeenReadBookDiv">
-                        <input type="checkbox" id="2323">
-                        <Label for="2323" class="hasBeenReadBook">Has been read</Label>
-                    </div>
-                    <div class="deleteDiv">
-                        <button class="deleteBook">DELETE</button>
-                    </div>
-                </div>
-            </div>
-            <div class="book">
-                <h2 class="titleBook">The3 Hobbit</h2>
-                <div class="authorBook">J.R.R. Tolkien</div>
-                <div class="numberOfPagesBook">295</div>
-                <div class="bookInputs">
-                    <div class="hasBeenReadBookDiv">
-                        <input type="checkbox" id="2323">
-                        <Label for="2323" class="hasBeenReadBook">Has been read</Label>
-                    </div>
-                    <div class="deleteDiv">
-                        <button class="deleteBook">DELETE</button>
-                    </div>
-                </div>
-            </div>
-            <div class="book">
-                <h2 class="titleBook">The2 Hobbit</h2>
-                <div class="authorBook">J.R.R. Tolkien</div>
-                <div class="numberOfPagesBook">295</div>
-                <div class="bookInputs">
-                    <div class="hasBeenReadBookDiv">
-                        <input type="checkbox" id="2323">
-                        <Label for="2323" class="hasBeenReadBook">Has been read</Label>
-                    </div>
-                    <div class="deleteDiv">
-                        <button class="deleteBook">DELETE</button>
+                    <div class="deleteDivBook">
+                        <button class="deleteButtonBook">DELETE</button>
                     </div>
                 </div>
             </div>
@@ -169,7 +57,7 @@
     </main>
 
     <footer>
-        <div>Project's GitHub repository: <a href="https://github.com/AkiPoh/practice-libary" target="_blank"  rel="noreferrer noopener">AkiPoh/practice-libary</a></div>
+        <div>Project's GitHub repository: <a href="https://github.com/AkiPoh/practice-library" target="_blank"  rel="noreferrer noopener">AkiPoh/practice-library</a></div>
     </footer>
 </body>
 </html>

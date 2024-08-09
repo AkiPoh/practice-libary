@@ -1,4 +1,4 @@
-# practice-libary
+# practice-library
 
 ## Development
 
@@ -8,5 +8,5 @@
 
 - [ ] Make it work with Javascript
     - Book()
-    - addBookToLibary()
+    - addBookToLibrary()
     - Read delete and read buttons to each book
