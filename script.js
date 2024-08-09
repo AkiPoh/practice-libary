@@ -25,7 +25,7 @@ function updateGrid () {
         grid.removeChild(booksDivs[i])
     }
 
-library.map((item, index) => {
+    library.map((item, index) => {
         let bookDiv = document.createElement("div")
         bookDiv.classList.add("book")
         bookDiv.setAttribute("ID", ``)
@@ -77,7 +77,7 @@ library.map((item, index) => {
         deleteButtonBook.textContent = "DELETE"
         deleteButtonBook.addEventListener("click", () => {
             library.splice(index, 1)
-            updateGrid()
+            grid.removeChild(bookDiv)
         })
         inputsDivBook.appendChild(deleteButtonBook)
 
