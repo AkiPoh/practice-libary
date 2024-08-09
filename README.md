@@ -2,6 +2,9 @@
 
 Done as part of the Odin Project's full-stack JS course.
 
+## Use on the web:
+https://akipoh.github.io/practice-library/
+
 ## Development
 
 - [x] Make UI with HTML and CSS
